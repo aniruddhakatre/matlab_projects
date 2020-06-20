@@ -9,16 +9,12 @@ classdef FifoQueue < Queue
   %   3) pop       - Remove data from the queue
   %   4) peek      - Peek at the next element in the queue
   %
-  % The FifoQueue class contains the following properties -
-  %   1) type_     - The datatype of values in the queue. The type_
-  %                  property is set to the datatype of the first value
-  %                  added to the queue. Until then, the property is empty.
-  %                  This property is read-only and cannot be modified by
-  %                  the user.
-  %   2) depth_    - The depth of the queue. If not set explicitly while
-  %                  instantiating the object, the depth_ property is set
-  %                  to Inf. This property is read-only and cannot be
-  %                  updated once the object has been created.
+  % The FifoQueue class can be instantiated with the syntax,
+  %
+  % >> obj = FifoQueue(depth)
+  %
+  % where depth is an optional argument to the constructor specifying the
+  % size of the queue. 
   
   
   methods
